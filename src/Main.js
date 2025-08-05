@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 // ✅ MongoDB connection
-const DB_URL = process.env.atlas_URl
+const DB_URL = process.env.atlas_URL
 mongoose.connect(DB_URL);
 const db = mongoose.connection;
 db.on("error", () => console.log("Database Connection Fails"));
